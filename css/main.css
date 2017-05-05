@@ -1,7 +1,17 @@
+html, body {
+ margin : 0px;
+ padding: 0px;
+ font-family: 'Lato';
+}
 nav {
  border-bottom: 1px solid #f3eded;
  height: 10%;
  color: #F76861;
+}
+
+logo {
+ overflow: hidden;
+ float: left;
 }
 
 nav ul {
@@ -26,8 +36,4 @@ nav li a {
 /* Change the link color to #111 (black) on hover */
 nav li a:hover {
     background-color: #111;
-}
-
-p {
-  font-family: 'Lato';
 }
