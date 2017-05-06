@@ -1,7 +1,13 @@
+/* Version 1.1 */
+
 html {
  margin : 0px;
  padding: 0px;
  font-family: 'Lato';
+}
+
+#biowrapper {
+  width: 100%;
 }
 
 #wrapper {
@@ -9,6 +15,15 @@ html {
   margin-right: 25%;
   width: 50%;
   height: 100%;
+}
+
+#heroimage {
+  float: right;
+  margin-left: 2.5%;
+}
+
+#contacts {
+  float: left;
 }
 
 p {
@@ -50,7 +65,6 @@ nav li a {
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 nav li a:hover {
     color: #82B3E5;
 }
@@ -64,6 +78,7 @@ footer ul {
 
 footer li {
     float: right;
+    margin-top: 2.5%;
 }
 
 footer li a {
@@ -74,7 +89,6 @@ footer li a {
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 footer li a:hover {
     color: #50E3C2;
 }
