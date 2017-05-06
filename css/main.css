@@ -1,10 +1,12 @@
-html, body {
+html {
  margin : 0px;
  padding: 0px;
  font-family: 'Lato';
 }
 
-container {
+body {
+  margin-left: 25%;
+  margin-right: 25%;
   width: 50%;
   height: 100%;
 }
@@ -40,6 +42,30 @@ nav li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-nav li a:hover {
+footer li a:hover {
     color: black;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+footer li {
+    float: right;
+}
+
+footer li a {
+    display: block;
+    color: #3C6398;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+footer li a:hover {
+    color: #50E3C2;
 }
