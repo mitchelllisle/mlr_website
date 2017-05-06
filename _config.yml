@@ -1,5 +1,11 @@
-name: Hank Quinlan, Horrible Cop
-markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+title: Researcher
+url: "http://ankitsultana.com"
+baseurl: "/researcher"
 
-theme: jekyll-theme-cayman
+markdown: kramdown
+
+tracking_id: #
+
+sass:
+    style: compressed
+    sass_dir: _sass
