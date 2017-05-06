@@ -1,3 +1,5 @@
+/* Version 1.1 */
+
 html {
  margin : 0px;
  padding: 0px;
@@ -41,7 +43,6 @@ nav li a {
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 footer li a:hover {
     color: black;
 }
@@ -65,7 +66,6 @@ footer li a {
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 footer li a:hover {
     color: #50E3C2;
 }
