@@ -6,7 +6,7 @@ html {
  font-family: 'Lato';
 }
 
-.wrapper {
+#wrapper {
   margin-left: 25%;
   margin-right: 25%;
   width: 50%;
