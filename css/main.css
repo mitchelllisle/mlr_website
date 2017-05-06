@@ -3,6 +3,12 @@ html, body {
  padding: 0px;
  font-family: 'Lato';
 }
+
+container {
+  width: 50%;
+  height: 100%;
+}
+
 nav {
  border-bottom: 1px solid #f3eded;
  height: 10%;
