@@ -46,6 +46,15 @@ logo {
  float: left;
 }
 
+#post ul {
+  column-count: 2;
+  column-width: 20%;
+  list-style-position: inside;
+  background-color: whitesmoke;
+    -webkit-padding-before: 2%;
+    -webkit-padding-after: 2%;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
