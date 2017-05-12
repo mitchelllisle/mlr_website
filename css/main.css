@@ -54,6 +54,14 @@ logo {
     -webkit-padding-after: 2%;
 }
 
+#post ul li a {
+    color: black;
+}
+
+#post ul li a:hover {
+    color: #EA6532;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
