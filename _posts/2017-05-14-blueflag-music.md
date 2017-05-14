@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Blueflag/BigDatr Music Analysis"
-date: 2014-05-30
+date: 2017-05-14
 ---
 
 Music tastes can be super varied from one person to the next. I don't know why I like a lot of the music I do (a good subject for a future analysis).
