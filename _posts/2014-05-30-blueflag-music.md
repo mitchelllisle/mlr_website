@@ -13,3 +13,5 @@ The main questions this analysis is seeking to answer is:
 - What genres do we listen to the most? What country of origin do we listen to the most? What time period is most popular?
 - What is the mood of the songs being played? What is the most dominant mood? What is a playlist of songs to fit a mood?
 - Does the weather have an impact on what music we play?
+
+![TopArtists](../_posts/topartistscolumn.png)
