@@ -33,19 +33,70 @@
 <p class="meta">30 May 2014</p>
 
 <div class="post">
-  <p>Music tastes are as varied from person to the next. I don’t know why I like a lot of the music I do (a good subject for a future analysis).
-The music we listen to in the space of a day can sometimes be very varied….or not. This is an analysis into the music habits of Blueflag/BigDatr employees.</p>
+  <p>Music tastes can be super varied from one person to the next. I don’t know why I like a lot of the music I do (a good subject for a future analysis).
+The music we listen to in the space of a day can also be be super varied….or not. This is an analysis into the music habits of Blueflag/BigDatr employees.</p>
 
 <p>The main questions this analysis is seeking to answer is:</p>
 <ul>
   <li>What are the most popular songs we have played?</li>
   <li>Who are the most popular artists?</li>
+  <li>What are the most popular albums?</li>
   <li>What genres do we listen to the most? What country of origin do we listen to the most? What time period is most popular?</li>
   <li>What is the mood of the songs being played? What is the most dominant mood? What is a playlist of songs to fit a mood?</li>
   <li>Does the weather have an impact on what music we play?</li>
 </ul>
 
-<p><img src="../_posts/topartistscolumn.png" alt="TopArtists" /></p>
+<h4 id="data-sources">Data Sources:</h4>
+<ul>
+  <li>LastFM API - blueflagmusic account</li>
+  <li>MusicBrainz API - Song, Album, Artist metadata</li>
+</ul>
+
+<hr />
+
+<h2 id="artists">Artists</h2>
+<p>The first thing I looked at was the number of times we have played a song, grouped by artist. Surprisingly (to me atleast), <code class="highlighter-rouge">The National</code> came out on top followed by <code class="highlighter-rouge">Queen</code> and <code class="highlighter-rouge">TV on the Radio</code>.
+I don’t feel like we actually listen to these artists aaaaall the time, so the next part of the artist analysis will be to look at the most common artists we play by day, rather than just relying on
+the track count (E.g We have heard Queen on 20% of the days where music has been played). Or even the probability you will hear an artist on any given day.</p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/18128531/26030907/0d891434-38a5-11e7-9738-3e992a325791.png" alt="rplot" /></p>
+
+<hr />
+
+<h2 id="albums">Albums</h2>
+<p>The next area I looked at was Albums. <code class="highlighter-rouge">The Platinum Collection - Queen</code> came out on top as the most played album. Great album, at 340 plays we still don’t play it enough! <code class="highlighter-rouge">Feel Good - Gorillaz</code> came in at number two, with <code class="highlighter-rouge">Random Access Memories - Daft Punk</code> rounding out the top three. Not too bad.</p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/18128531/26032884/08dd5e76-38e2-11e7-9e1a-d893501f76f0.gif" alt="queen" />
+<img src="https://cloud.githubusercontent.com/assets/18128531/26032891/2d3204ac-38e2-11e7-8155-9ddcdf61e34c.gif" alt="daftunk" />
+<img src="https://cloud.githubusercontent.com/assets/18128531/26032894/3b2ee0fc-38e2-11e7-90f4-0ccae411a276.gif" alt="gorillaz" /></p>
+
+<p>There are a few other interesting albums that make it into the top 20, indicating that plays alone is really not a great way to understand if we’re listening to albums alot or just
+queuing a bunch of songs in one go that make it appear as though we listen to them a-lot.</p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/18128531/26032584/3953ddb2-38da-11e7-9921-ae600f8680d1.png" alt="rplot" /></p>
+
+<hr />
+
+<h3 id="songs">Songs</h3>
+<p>Next up - songs. <code class="highlighter-rouge">Uptown Funk - Mark Ronson</code> takes spot number one. <code class="highlighter-rouge">Riptide - Vance Joy</code> at number two. Ugh. And <code class="highlighter-rouge">Lean On - Major Lazer</code> taking out number three.</p>
+
+<p>It would be interesting to see if we tend to play more individual songs or albums - another reason to get some data around the time that we play the songs instead of just pre-aggregated data.</p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/18128531/26032980/0c2f776a-38e4-11e7-83d7-861816f04668.png" alt="rplot" /></p>
+
+<hr />
+
+<h3 id="next-steps">Next Steps</h3>
+<p>This is a pretty basic analysis, from here I will look at:</p>
+
+<ul>
+  <li>Join with the data from MusicBrainz which includes - Genre, Tags, Country of origin, years active and more</li>
+  <li>Try and find some data on the moods associated with these songs. Are we a happy/sad/energetic office</li>
+  <li>Get the lyrics for each song (Then look at a <a href="http://setosa.io/ev/markov-chains/">Markov Chain</a> of songs to create our own song from the songs we like)</li>
+  <li>Look into getting data from LastFM that includes more data around the specific times we play each song</li>
+  <li>Categorise and cluster songs to see what our dominant listening tendencies are</li>
+  <li>See how we compare with others who have rated songs/albums/artists</li>
+</ul>
 
 </div>
 

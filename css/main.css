@@ -22,7 +22,11 @@ html {
   margin-left: 2.5%;
 }
 
-
+.highlighter-rouge {
+  color: #EA6532;
+  font-family: 'Lato';
+  font-style: italic;
+}
 
 p {
   color: #000;
@@ -61,6 +65,8 @@ logo {
 #post ul li a:hover {
     color: #EA6532;
 }
+
+
 
 nav ul {
     list-style-type: none;
