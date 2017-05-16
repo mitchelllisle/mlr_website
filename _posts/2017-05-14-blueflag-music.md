@@ -7,7 +7,8 @@ date: 2017-05-14
 Music tastes can be super varied from one person to the next. I don't know why I like a lot of the music I do (a good subject for a future analysis).
 The music we listen to in the space of a day can also be be super varied....or not. This is an analysis into the music habits of Blueflag/BigDatr employees.
 
-The main questions this analysis is seeking to answer is:
+Some interesting questions this analysis will seek to answer is:
+
 - What are the most popular songs we have played?
 - Who are the most popular artists?
 - What are the most popular albums?
@@ -31,10 +32,10 @@ the track count (E.g We have heard Queen on 20% of the days where music has been
 ---
 
 ## Albums
-The next area I looked at was Albums. `The Platinum Collection - Queen` came out on top as the most played album. Great album, at 340 plays we still don't play it enough! `Feel Good - Gorillaz` came in at number two, with `Random Access Memories - Daft Punk` rounding out the top three. Not too bad.
+The next area I looked at was Albums. `The Platinum Collection - Queen` came out on top as the most played album. Great album, at 340 plays we still don't play it enough! `Feel Good - The Internet` came in at number two, with `Random Access Memories - Daft Punk` rounding out the top three. Not too bad.
 
 ![queen](https://cloud.githubusercontent.com/assets/18128531/26032884/08dd5e76-38e2-11e7-9e1a-d893501f76f0.gif)
-![daftunk](https://cloud.githubusercontent.com/assets/18128531/26032891/2d3204ac-38e2-11e7-8155-9ddcdf61e34c.gif)
+![theinternet](https://cloud.githubusercontent.com/assets/18128531/26098631/b2d039c8-3a6b-11e7-80ef-299afa7b5c97.gif)
 ![gorillaz](https://cloud.githubusercontent.com/assets/18128531/26032894/3b2ee0fc-38e2-11e7-90f4-0ccae411a276.gif)
 
 

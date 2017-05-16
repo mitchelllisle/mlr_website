@@ -35,7 +35,14 @@ p {
 h1 {
   color: #000;
   font-weight: bold;
+  text-decoration: underline;
 }
+
+h2 {
+  margin-bottom: 0px;
+  font-style: italic;
+}
+
 
 nav {
  border-bottom: 1px solid #000;
@@ -51,11 +58,13 @@ logo {
 
 
 #post ul {
+  columns: 1;
   column-width: 20%;
   list-style-position: inside;
   background-color: whitesmoke;
     -webkit-padding-before: 2%;
     -webkit-padding-after: 2%;
+    margin-top: 0px;
 }
 
 #post ul li a {
