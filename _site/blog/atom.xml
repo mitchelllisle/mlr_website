@@ -4,13 +4,53 @@
  <title>Hank Quinlan's Blog</title>
  <link href="http://hankquinlan.github.io/blog/atom.xml" rel="self"/>
  <link href="http://hankquinlan.github.io/blog"/>
- <updated>2017-05-20T11:40:38+10:00</updated>
+ <updated>2017-05-20T21:27:00+10:00</updated>
  <id>http://hankquinlan.github.io/blog</id>
  <author>
    <name>Hank Quinlan</name>
    <email>hankquinlanhub@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Various Statistics for Australia</title>
+   <link href="http://hankquinlan.github.io/blog/2017/05/14/various_stats"/>
+   <updated>2017-05-14T00:00:00+10:00</updated>
+   <id>http://hankquinlan.github.io//blog/2017/05/14/various_stats</id>
+   <content type="html">&lt;p&gt;I feel like alot of conversations I have will end with someone saying something along the lines of - ‘I wonder how many x there are here’ or ‘What is the likelihood of y happening’. This post is an attempt to answer some of the random questions that pop up from time to time in conversations I have with people.&lt;/p&gt;
+
+&lt;p&gt;I’ll try to keep this updated, but a lot of these will most likely be one off attempts to answer a question.&lt;/p&gt;
+
+&lt;h4 id=&quot;household-income-by-suburb-2011&quot;&gt;Household Income by Suburb (2011)&lt;/h4&gt;
+&lt;p&gt;Different areas are typically known for being more affluent or ‘bogan’ than others. But does the data reflect this opinion of the suburbs you can think of? Well, looking at household income is one way to do this. The map below shows the most common income bracket for households by suburb.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The categories below show Weekly Income (E.g. $400 - 599) and Yearly Income in Brackets (E.g. $208,000 - $259,000)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe src=&quot;https://exploratory.io/viz/mitchelllisle/4605738173863267?cb=1495277092473&amp;amp;embed=true&quot; width=&quot;100%&quot; height=&quot;650px&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;h4 id=&quot;deaths-in-australia&quot;&gt;Deaths in Australia&lt;/h4&gt;
+&lt;p&gt;A bit of a morbid one, but interesting nonetheless. &lt;a href=&quot;https://fivethirtyeight.com/&quot;&gt;FiveThirtyEight&lt;/a&gt; did an interesting article on &lt;a href=&quot;https://fivethirtyeight.com/features/as-u-s-life-expectancies-climb-people-in-a-few-places-are-dying-younger/&quot;&gt;life expectancy in the US&lt;/a&gt;, and I thought it would be interesting to look at various stats related to &lt;code class=&quot;highlighter-rouge&quot;&gt;deaths in Australia.&lt;/code&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;deaths-per-1000-people-2014&quot;&gt;Deaths per 1000 People (2014)&lt;/h5&gt;
+
+&lt;iframe src=&quot;https://exploratory.io/viz/mitchelllisle/1809439828032131?cb=1495277963031&amp;amp;embed=true&quot; width=&quot;100%&quot; height=&quot;650px&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;h5 id=&quot;source-httpwwwaihwgovaudeathsmort&quot;&gt;source: http://www.aihw.gov.au/deaths/mort/&lt;/h5&gt;
+
+&lt;h4 id=&quot;flights-and-airlines-2017-to-date&quot;&gt;Flights and Airlines (2017 to date)&lt;/h4&gt;
+&lt;p&gt;Flying is one of those things that some you have to do alot of the time, but I don’t particularly enjoy it, especially when there are problems. I don’t have any particular loyalty when it comes to airlines, I do actively avoid some airlines based off past experience in delays/cancellations and the like. But how often do flights get delayed/cancelled?&lt;/p&gt;
+
+&lt;p&gt;Well, generally speaking, most airlines do pretty well when it comes to getting away on time, getting to their destination on time, and cancelling flights. Stats below:&lt;/p&gt;
+
+&lt;h5 id=&quot;cancelled-flights&quot;&gt;Cancelled Flights&lt;/h5&gt;
+&lt;iframe src=&quot;https://exploratory.io/viz/mitchelllisle/0461651047657660?cb=1495279263144&amp;amp;embed=true&quot; width=&quot;100%&quot; height=&quot;320px&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;h5 id=&quot;delays&quot;&gt;Delays&lt;/h5&gt;
+&lt;iframe src=&quot;https://exploratory.io/viz/mitchelllisle/6444309423116600?cb=1495278690284&amp;amp;embed=true&quot; width=&quot;100%&quot; height=&quot;650px&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Blueflag/BigDatr Music Analysis</title>
