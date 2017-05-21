@@ -4,7 +4,7 @@
  <title>Hank Quinlan's Blog</title>
  <link href="http://hankquinlan.github.io/blog/atom.xml" rel="self"/>
  <link href="http://hankquinlan.github.io/blog"/>
- <updated>2017-05-20T21:27:00+10:00</updated>
+ <updated>2017-05-21T12:33:34+10:00</updated>
  <id>http://hankquinlan.github.io/blog</id>
  <author>
    <name>Hank Quinlan</name>
@@ -13,22 +13,58 @@
 
  
  <entry>
-   <title>Various Statistics for Australia</title>
-   <link href="http://hankquinlan.github.io/blog/2017/05/14/various_stats"/>
-   <updated>2017-05-14T00:00:00+10:00</updated>
-   <id>http://hankquinlan.github.io//blog/2017/05/14/various_stats</id>
-   <content type="html">&lt;p&gt;I feel like alot of conversations I have will end with someone saying something along the lines of - ‘I wonder how many x there are here’ or ‘What is the likelihood of y happening’. This post is an attempt to answer some of the random questions that pop up from time to time in conversations I have with people.&lt;/p&gt;
+   <title>Airlines</title>
+   <link href="http://hankquinlan.github.io/blog/2017/05/21/airlines"/>
+   <updated>2017-05-21T00:00:00+10:00</updated>
+   <id>http://hankquinlan.github.io//blog/2017/05/21/airlines</id>
+   <content type="html">&lt;h4 id=&quot;flights-and-airlines-2017-to-date&quot;&gt;Flights and Airlines (2017 to date)&lt;/h4&gt;
+&lt;p&gt;Flying is one of those things that some you have to do alot of the time, but I don’t particularly enjoy it, especially when there are problems. I don’t have any particular loyalty when it comes to airlines, I do actively avoid some airlines based off past experience in delays/cancellations and the like. But how often do flights get delayed/cancelled?&lt;/p&gt;
 
-&lt;p&gt;I’ll try to keep this updated, but a lot of these will most likely be one off attempts to answer a question.&lt;/p&gt;
+&lt;p&gt;Well, generally speaking, most airlines do pretty well when it comes to getting away on time, getting to their destination on time, and cancelling flights. Atleast for this year anyway. Stats below:&lt;/p&gt;
 
-&lt;h4 id=&quot;household-income-by-suburb-2011&quot;&gt;Household Income by Suburb (2011)&lt;/h4&gt;
-&lt;p&gt;Different areas are typically known for being more affluent or ‘bogan’ than others. But does the data reflect this opinion of the suburbs you can think of? Well, looking at household income is one way to do this. The map below shows the most common income bracket for households by suburb.&lt;/p&gt;
+&lt;h5 id=&quot;cancelled-flights&quot;&gt;Cancelled Flights&lt;/h5&gt;
+&lt;iframe src=&quot;https://exploratory.io/viz/mitchelllisle/0461651047657660?cb=1495279263144&amp;amp;embed=true&quot; width=&quot;100%&quot; height=&quot;320px&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;h5 id=&quot;delays&quot;&gt;Delays&lt;/h5&gt;
+&lt;iframe src=&quot;https://exploratory.io/viz/mitchelllisle/6444309423116600?cb=1495278690284&amp;amp;embed=true&quot; width=&quot;100%&quot; height=&quot;650px&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;h5 id=&quot;source-httpsbitregovau&quot;&gt;Source https://bitre.gov.au/&lt;/h5&gt;
+
+&lt;p&gt;Next I’ll look at getting some more data to see how this changes over time and any other data I can get around this.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>ABS Census Data</title>
+   <link href="http://hankquinlan.github.io/blog/2017/05/20/various_stats"/>
+   <updated>2017-05-20T00:00:00+10:00</updated>
+   <id>http://hankquinlan.github.io//blog/2017/05/20/various_stats</id>
+   <content type="html">&lt;p&gt;Census data always provides some interesting stats about the state of Australia and our beliefs, interests and more. It’s a great way to play around with data and visualise some simple things about a particular topic&lt;/p&gt;
+
+&lt;p&gt;Note: Some of these maps may take a bit to load.
+Note Note: All data is sourced from the Australia Bureau of Statistics, unless stated otherwise.&lt;/p&gt;
+
+&lt;h4 id=&quot;population-by-suburb-2011&quot;&gt;Population by Suburb (2011)&lt;/h4&gt;
+&lt;p&gt;You might not know how many people you share a suburb with, but the census has some really easy to use information on these numbers.&lt;/p&gt;
+
+&lt;p&gt;Future enhancement will be to show the population growth from one census to the next.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://exploratory.io/viz/mitchelllisle/2202511743794174?cb=1495329702286&amp;amp;embed=true&quot; width=&quot;100%&quot; height=&quot;650px&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;h4 id=&quot;most-common-household-income-by-suburb-2011&quot;&gt;Most Common Household Income by Suburb (2011)&lt;/h4&gt;
+&lt;p&gt;Different areas are typically known for being more affluent or ‘bogan’ than others. But does the data reflect this opinion of the suburbs you can think of? Well, looking at household income is one way to do this. This represenation isn’t perfect, as it only shows the most common household income. But it does give an indication of where there are high concentrations of similar household incomes.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;The categories below show Weekly Income (E.g. $400 - 599) and Yearly Income in Brackets (E.g. $208,000 - $259,000)&lt;/li&gt;
+  &lt;li&gt;This is household income too, not individual income.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;iframe src=&quot;https://exploratory.io/viz/mitchelllisle/4605738173863267?cb=1495277092473&amp;amp;embed=true&quot; width=&quot;100%&quot; height=&quot;650px&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;https://exploratory.io/viz/mitchelllisle/8614676385703036?cb=1495333727830&amp;amp;embed=true&quot; width=&quot;100%&quot; height=&quot;650px&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;h4 id=&quot;most-common-religion-by-suburb&quot;&gt;Most Common Religion by Suburb&lt;/h4&gt;
+&lt;p&gt;Driving around Australia you would notice a lot of different areas have different demographics, but one of the things that might be hard to notice is religions. You might see a church every now and then, but we have a diverse nation of religions and beliefs, and naturally some areas contain more people of one faith to another. This is a look at the most commonly occurring religions by suburbs.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://exploratory.io/viz/mitchelllisle/5693444744074816?cb=1495333967751&amp;amp;embed=true&quot; width=&quot;100%&quot; height=&quot;650px&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
 
 &lt;h4 id=&quot;deaths-in-australia&quot;&gt;Deaths in Australia&lt;/h4&gt;
 &lt;p&gt;A bit of a morbid one, but interesting nonetheless. &lt;a href=&quot;https://fivethirtyeight.com/&quot;&gt;FiveThirtyEight&lt;/a&gt; did an interesting article on &lt;a href=&quot;https://fivethirtyeight.com/features/as-u-s-life-expectancies-climb-people-in-a-few-places-are-dying-younger/&quot;&gt;life expectancy in the US&lt;/a&gt;, and I thought it would be interesting to look at various stats related to &lt;code class=&quot;highlighter-rouge&quot;&gt;deaths in Australia.&lt;/code&gt;&lt;/p&gt;
@@ -38,17 +74,6 @@
 &lt;iframe src=&quot;https://exploratory.io/viz/mitchelllisle/1809439828032131?cb=1495277963031&amp;amp;embed=true&quot; width=&quot;100%&quot; height=&quot;650px&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
 
 &lt;h5 id=&quot;source-httpwwwaihwgovaudeathsmort&quot;&gt;source: http://www.aihw.gov.au/deaths/mort/&lt;/h5&gt;
-
-&lt;h4 id=&quot;flights-and-airlines-2017-to-date&quot;&gt;Flights and Airlines (2017 to date)&lt;/h4&gt;
-&lt;p&gt;Flying is one of those things that some you have to do alot of the time, but I don’t particularly enjoy it, especially when there are problems. I don’t have any particular loyalty when it comes to airlines, I do actively avoid some airlines based off past experience in delays/cancellations and the like. But how often do flights get delayed/cancelled?&lt;/p&gt;
-
-&lt;p&gt;Well, generally speaking, most airlines do pretty well when it comes to getting away on time, getting to their destination on time, and cancelling flights. Stats below:&lt;/p&gt;
-
-&lt;h5 id=&quot;cancelled-flights&quot;&gt;Cancelled Flights&lt;/h5&gt;
-&lt;iframe src=&quot;https://exploratory.io/viz/mitchelllisle/0461651047657660?cb=1495279263144&amp;amp;embed=true&quot; width=&quot;100%&quot; height=&quot;320px&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
-
-&lt;h5 id=&quot;delays&quot;&gt;Delays&lt;/h5&gt;
-&lt;iframe src=&quot;https://exploratory.io/viz/mitchelllisle/6444309423116600?cb=1495278690284&amp;amp;embed=true&quot; width=&quot;100%&quot; height=&quot;650px&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
 </content>
  </entry>
  

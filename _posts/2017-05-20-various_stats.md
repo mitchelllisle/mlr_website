@@ -1,18 +1,34 @@
 ---
 layout: post
-title: "Various Statistics for Australia"
-date: 2017-05-14
+title: "ABS Census Data"
+date: 2017-05-20
 ---
-I feel like alot of conversations I have will end with someone saying something along the lines of - 'I wonder how many x there are here' or 'What is the likelihood of y happening'. This post is an attempt to answer some of the random questions that pop up from time to time in conversations I have with people.
+Census data always provides some interesting stats about the state of Australia and our beliefs, interests and more. It's a great way to play around with data and visualise some simple things about a particular topic
 
-I'll try to keep this updated, but a lot of these will most likely be one off attempts to answer a question.
+Note: Some of these maps may take a bit to load.
+Note Note: All data is sourced from the Australia Bureau of Statistics, unless stated otherwise.
 
-#### Household Income by Suburb (2011)
-Different areas are typically known for being more affluent or 'bogan' than others. But does the data reflect this opinion of the suburbs you can think of? Well, looking at household income is one way to do this. The map below shows the most common income bracket for households by suburb.
+#### Population by Suburb (2011)
+You might not know how many people you share a suburb with, but the census has some really easy to use information on these numbers.
+
+Future enhancement will be to show the population growth from one census to the next.
+
+<iframe src="https://exploratory.io/viz/mitchelllisle/2202511743794174?cb=1495329702286&embed=true" width="100%" height="650px" frameborder="0"></iframe>
+
+
+#### Most Common Household Income by Suburb (2011)
+Different areas are typically known for being more affluent or 'bogan' than others. But does the data reflect this opinion of the suburbs you can think of? Well, looking at household income is one way to do this. This represenation isn't perfect, as it only shows the most common household income. But it does give an indication of where there are high concentrations of similar household incomes.
 
 - The categories below show Weekly Income (E.g. $400 - 599) and Yearly Income in Brackets (E.g. $208,000 - $259,000)
+- This is household income too, not individual income.
 
-<iframe src="https://exploratory.io/viz/mitchelllisle/4605738173863267?cb=1495277092473&embed=true" width="100%" height="650px" frameborder="0"></iframe>
+<iframe src="https://exploratory.io/viz/mitchelllisle/8614676385703036?cb=1495333727830&embed=true" width="100%" height="650px" frameborder="0"></iframe>
+
+
+#### Most Common Religion by Suburb
+Driving around Australia you would notice a lot of different areas have different demographics, but one of the things that might be hard to notice is religions. You might see a church every now and then, but we have a diverse nation of religions and beliefs, and naturally some areas contain more people of one faith to another. This is a look at the most commonly occurring religions by suburbs.
+
+<iframe src="https://exploratory.io/viz/mitchelllisle/5693444744074816?cb=1495333967751&embed=true" width="100%" height="650px" frameborder="0"></iframe>
 
 
 #### Deaths in Australia
@@ -23,15 +39,3 @@ A bit of a morbid one, but interesting nonetheless. [FiveThirtyEight](https://fi
 <iframe src="https://exploratory.io/viz/mitchelllisle/1809439828032131?cb=1495277963031&embed=true" width="100%" height="650px" frameborder="0"></iframe>
 
 ##### source: http://www.aihw.gov.au/deaths/mort/
-
-
-#### Flights and Airlines (2017 to date)
-Flying is one of those things that some you have to do alot of the time, but I don't particularly enjoy it, especially when there are problems. I don't have any particular loyalty when it comes to airlines, I do actively avoid some airlines based off past experience in delays/cancellations and the like. But how often do flights get delayed/cancelled?
-
-Well, generally speaking, most airlines do pretty well when it comes to getting away on time, getting to their destination on time, and cancelling flights. Stats below:
-
-##### Cancelled Flights
-<iframe src="https://exploratory.io/viz/mitchelllisle/0461651047657660?cb=1495279263144&embed=true" width="100%" height="320px" frameborder="0"></iframe>
-
-##### Delays
-<iframe src="https://exploratory.io/viz/mitchelllisle/6444309423116600?cb=1495278690284&embed=true" width="100%" height="650px" frameborder="0"></iframe>
