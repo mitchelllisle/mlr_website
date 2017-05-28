@@ -33,6 +33,17 @@ iframe .embed-footer
   font-style: italic;
 }
 
+pre.highlight {
+  color: #123FAD;
+  font-family: 'Lato';
+  background-color: #F5F7F9;
+  width: 100%;
+  font-style: normal;
+  overflow: auto;
+  padding: 1%
+
+}
+
 p {
   color: #000;
 }

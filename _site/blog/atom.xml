@@ -4,13 +4,83 @@
  <title>Hank Quinlan's Blog</title>
  <link href="http://hankquinlan.github.io/blog/atom.xml" rel="self"/>
  <link href="http://hankquinlan.github.io/blog"/>
- <updated>2017-05-21T12:33:34+10:00</updated>
+ <updated>2017-05-28T21:53:29+10:00</updated>
  <id>http://hankquinlan.github.io/blog</id>
  <author>
    <name>Hank Quinlan</name>
    <email>hankquinlanhub@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Titanic Kaggle Challenge</title>
+   <link href="http://hankquinlan.github.io/blog/2017/05/28/titanic_kaggle"/>
+   <updated>2017-05-28T00:00:00+10:00</updated>
+   <id>http://hankquinlan.github.io//blog/2017/05/28/titanic_kaggle</id>
+   <content type="html">&lt;p&gt;I’ve always been super interested in the &lt;a href=&quot;https://www.kaggle.com/c/titanic#tutorials&quot;&gt;Kaggle&lt;/a&gt; data challenges and have gone through a number of peoples submissions. It’s great to see how people have tackled the problems and so I decided to write a blog post about the titanic competition, which is the beginners one.&lt;/p&gt;
+
+&lt;p&gt;I’ve broken it into three parts.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Exploratory Analysis&lt;/li&gt;
+  &lt;li&gt;Clean up and Tidying&lt;/li&gt;
+  &lt;li&gt;Survival Prediction&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;First off, I decided to join the train and test datasets together to have all variables together.&lt;/p&gt;
+
+&lt;h2 id=&quot;exploratory-analysis&quot;&gt;Exploratory Analysis&lt;/h2&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;train&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read.csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Downloads/titanic-train.csv&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read.csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Downloads/titanic-test.csv&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bind_rows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write.csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Downloads/all-titanic.csv&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The data looks a little something like this:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PassengerId Pclass                                         Name    Sex  Age SibSp Parch  Ticket    Fare Cabin Embarked Survived
+1         892      3                             Kelly, Mr. James   male 34.5     0     0  330911  7.8292              Q       NA
+2         893      3             Wilkes, Mrs. James (Ellen Needs) female 47.0     1     0  363272  7.0000              S       NA
+3         894      2                    Myles, Mr. Thomas Francis   male 62.0     0     0  240276  9.6875              Q       NA
+4         895      3                             Wirz, Mr. Albert   male 27.0     0     0  315154  8.6625              S       NA
+5         896      3 Hirvonen, Mrs. Alexander (Helga E Lindqvist) female 22.0     1     1 3101298 12.2875              S       NA
+6         897      3                   Svensson, Mr. Johan Cervin   male 14.0     0     0    7538  9.2250              S       NA
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Variable Descriptions&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Variable Name	Description
+Survived = Survived (1) or died (0)
+Pclass = Passenger’s class
+Name = Passenger’s name
+Sex = Passenger’s sex
+Age = Passenger’s age
+SibSp = Number of siblings/spouses aboard
+Parch = Number of parents/children aboard
+Ticket = Ticket number
+Fare = Fare
+Cabin =	Cabin
+Embarked = Port of embarkation
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;h3 id=&quot;titles&quot;&gt;Titles&lt;/h3&gt;
+
+&lt;p&gt;The first thing I decided to look at was the titles of those on board. Here are the results of this - nothing particularly telling, but you can see where most people got on the Titanic.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://exploratory.io/viz/mitchelllisle/7762766613215181?cb=1495970816576&amp;amp;embed=true&quot; width=&quot;100%&quot; height=&quot;650px&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&quot;class&quot;&gt;Class&lt;/h3&gt;
+&lt;p&gt;Did it make a difference if you paid more on the Titanic? Would you increase your chance of survival if you forked out money for the high class spots? Intuitively you would say that is the case, but when it comes to the Titanic this is not the case. Here you can see that &lt;code class=&quot;highlighter-rouge&quot;&gt;75% of 'Upper Class'&lt;/code&gt; ticket holders did not survive, whereas &lt;code class=&quot;highlighter-rouge&quot;&gt;62% of 'Low Class'&lt;/code&gt; ticket holders did. Overall there were a total of 491 people in the ‘Upper Class’ category, but only 216 in the ‘Low Class’ category. Perhaps being among more people in the Upper Class meant more people missed out. Obviously more analysis into the Titanic schematics might show you why this may have been the case, but for this dataset at least, it certainly didn’t mean you had a higher chance of survival.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://exploratory.io/viz/mitchelllisle/0674205113100465?cb=1495971751602&amp;amp;embed=true&quot; width=&quot;100%&quot; height=&quot;650px&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&quot;families-tbc&quot;&gt;Families TBC&lt;/h3&gt;
+&lt;p&gt;….&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Airlines</title>
